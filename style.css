@@ -1,0 +1,117 @@
+@import "reset.css";
+
+.background {
+  background-color: white;
+  margin: 0 auto;
+  height: 710px;
+  border: 5px solid rgb(0, 105, 68);
+}
+
+.start_background {
+  background-color: rgb(103, 156, 103);
+  margin: 0 auto;
+  height: 710px;
+  margin: 0 auto;
+  height: 710px;
+  border: 5px solid rgb(0, 105, 68);
+}
+
+.start_btn {
+  margin-top: 20px;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: NanumSquareNeo-Variable;
+  font-size: 30px;
+  border: 0px;
+}
+
+.start_btn :hover {
+  cursor: pointer;
+}
+
+.start_btn_deco {
+  background-color: green;
+  color: white;
+  border: 0px;
+}
+
+.round {
+  border-radius: 15px;
+}
+
+.ad {
+  margin-top: 30px;
+  /* visibility: hidden; */
+}
+
+.content_div {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.kiosk {
+  background-color: white;
+  width: 1480px;
+  height: 690px;
+  margin: 0 auto;
+  margin-top: 10px;
+  border: 1px solid black;
+  display: flex;
+}
+
+.start_kiosk {
+  background-color: rgb(103, 156, 103);
+  width: 1480px;
+  height: 690px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+#logoimg {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+/* div menu */
+.menu {
+  width: 80%;
+  /* background-color: rgb(0, 105, 68); */
+  margin: 0 auto;
+}
+
+/* ul */
+.menuCategori {
+  list-style-type: none;
+  font-family: NanumSquareNeo-Variable;
+  padding: 10px;
+  font-size: 25px;
+}
+
+/* li */
+.menubtn {
+  color: rgb(0, 105, 68);
+  margin-bottom: 25px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+@font-face {
+  font-family: "NanumSquareNeo-Variable";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2")
+    format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.kiosk_left {
+  width: 20%;
+}
+
+.kiosk_center {
+  border: 3px solid blue;
+  width: 60%;
+}
+
+.kiosk_right {
+  width: 20%;
+}
