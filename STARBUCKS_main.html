@@ -4,30 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.min.css" />
+
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="">
+  <body id="kiosk_body">
     <div class="background round">
       <div class="kiosk round">
         <div class="kiosk_left">
           <div class="menu round">
-            <img src="logo.png" width="100%" id="logoimg" />
+            <img src="./menu_image/logo.png" width="100%" id="logoimg" />
 
             <ul class="menuCategori">
-              <li class="menubtn">NEW</li>
-              <li class="menubtn">에스프레소</li>
-              <li class="menubtn">프라푸치노</li>
-              <li class="menubtn">티바나</li>
-              <li class="menubtn">블렌디드</li>
-              <li class="menubtn">푸드</li>
+              <li id="menubtn_0" class="menubtn round oncursor choice">NEW</li>
+              <li id="menubtn_1" class="menubtn round oncursor">에스프레소</li>
+              <li id="menubtn_2" class="menubtn round oncursor">프라푸치노</li>
+              <li id="menubtn_3" class="menubtn round oncursor">티바나</li>
+              <li id="menubtn_4" class="menubtn round oncursor">블렌디드</li>
+              <li id="menubtn_5" class="menubtn round oncursor">푸드</li>
             </ul>
           </div>
         </div>
 
-        <div class="kiosk_center"></div>
-        <div class="kiosk_right"></div>
+        <div id="kiosk_center" class="kiosk_center round"></div>
+        <div id="kiosk_right" class="kiosk_right round">
+          <div id="right_top">
+            <div id="orderAndReceipt">
+              <div id="orderText">주 문 서</div>
+              <!-- <img src="./menu_image/receipt.png" width="40px%" id="receiptIcon" /> -->
+            </div>
+          </div>
+
+          <div id="right_center"></div>
+
+          <div id="right_total">
+            <div id="right_total_total">Total:</div>
+            <div id="total">0</div>
+            원
+          </div>
+          <div id="right_down">
+            <button id="return_btn" class="btn round">처음으로</button
+            ><button id="reset_btn" class="btn round">비우기</button>
+
+            <button id="pay_cash" class="btn round">현금결제</button
+            ><button id="pay_card" class="btn round">카드결제</button>
+          </div>
+        </div>
       </div>
     </div>
+    <!-- <div id="receipt"><img src="./menu_image/receipt.png" width="40px%" /> 영수증</div> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.min.js"></script>
     <script src="STARBUCKS.js"></script>
   </body>
 </html>

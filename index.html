@@ -10,10 +10,20 @@
     <div class="start_background round">
       <div class="start_kiosk round">
         <div class="content_div">
-          <img src="start_logo.png" width="20%" id="start_logoimg" />
+          <div><img src="./menu_image/start_logo.png" width="20%" id="start_logoimg" /></div>
           <img
-            width="1200px"
-            src="https://scontent-gmp1-1.xx.fbcdn.net/v/t39.30808-6/397580511_741112148060380_8612870029272253007_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=9534ce&_nc_ohc=eYOZNEe1GmwAX-vfje3&_nc_ht=scontent-gmp1-1.xx&oh=00_AfCk3_pNTM4aJL3iYz6cuWG-nJbpi7q5izR70ye0VPPukA&oe=65B57073"
+            width="350px"
+            src="https://i.pinimg.com/564x/3e/99/cd/3e99cd604e2834d907a175e6e437e481.jpg"
+            class="round ad"
+          />
+          <img
+            width="400px"
+            src="https://cdn.popcornnews.net/news/photo/202012/27499_22188_0933.jpg"
+            class="round ad"
+          />
+          <img
+            width="440px"
+            src="https://image.zdnet.co.kr/2023/02/17/579c4540995151dd445e6e198c41c12b.png"
             class="round ad"
           />
           <div>
@@ -23,14 +33,15 @@
       </div>
     </div>
     <script>
+      setInterval(function () {
+        document.getElementById("start_btn").classList.toggle("start_btn_deco");
+      }, 800);
+
       document.getElementById("start_btn").addEventListener("click", () => {
         window.location.href = "STARBUCKS_main.html";
       });
-      setInterval(function () {
-        document.getElementById("start_btn").classList.toggle("start_btn_deco");
 
-        console.log("1초에 한 번 실행되는 코드");
-      }, 1000);
+      console.log(localStorage.getItem("결제내역_1"));
     </script>
   </body>
 </html>
